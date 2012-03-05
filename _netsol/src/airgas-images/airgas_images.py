@@ -41,7 +41,7 @@ def relogin(login_url, cache_dir, browser):
 	browser.close()
 	time.sleep(10)
 	
-	return login(login_url)
+	return login(login_url, cache_dir)
 	
 def getImages(login_url, cache_dir, page_dict, page_urls):
 	browser = login(login_url, cache_dir)
