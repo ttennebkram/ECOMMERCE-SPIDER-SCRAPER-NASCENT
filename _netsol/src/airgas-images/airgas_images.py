@@ -11,8 +11,10 @@ def makePageDict(id_file, ignore_file):
 	ignore_list = []
 	for row in reader:
 		if len(row) > 0:
-			ignore_list.append(row)
-	
+			id = row[0]
+			ignore_list.append(id)
+			print "added " + id + " to the ignore_list"
+			
 	id_file = open(id_file, "rb")
 	reader = csv.reader(id_file)
 	
@@ -20,8 +22,9 @@ def makePageDict(id_file, ignore_file):
 	for row in reader:
 		if len(row) > 0:
 			id = row[0]
-			if not id in ignore_list
+			if not id in ignore_list:
 				page_dict[id] = ""
+				print "added " + id + " to the page_dict"
 				
 	return page_dict
 	
@@ -37,6 +40,7 @@ def login(login_url, cache_dir):
 	full_cache_dir = os.path.abspath(cache_dir)
 	
 	fp = webdriver.FirefoxProfile()
+	fp.set_preference("browser.cache.memory.capacity", 0)
 	fp.set_preference("browser.cache.memory.enable", False)
 	fp.set_preference("browser.cache.disk.capacity", 5000000)
 	fp.set_preference("browser.cache.disk.parent_directory", full_cache_dir)
@@ -96,7 +100,7 @@ if __name__ == "__main__":
 	print "*** airgas_images.py - " + site + pnum + " ***\n"
 	
 	id_file = ids_dir + "\\" + site + "_image_ids" + pnum + ".csv"
-	ignore_file = config_dir + "\\" + site + "images_ignore_ids" + ".csv"
+	ignore_file = config_dir + "\\" + site + "_images_ignore_ids" + ".csv"
 	cache_dir = site + "_image_cache" + pnum + "\\"
 	results_file = site + "_image_dict" + pnum + ".csv"
 
