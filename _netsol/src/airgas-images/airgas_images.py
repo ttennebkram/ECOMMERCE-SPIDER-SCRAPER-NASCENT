@@ -1,18 +1,28 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-
 import os, sys, time, csv, traceback
 
-def makePageDict(file_name):
-	file = open(file_name, "rb")
-	reader = csv.reader(file)
+config_dir="config"
+
+def makePageDict(id_file, ignore_file):
+	ignore_file = open(ignore_file)
+	reader = csv.reader(ignore_file)
+	
+	ignore_list = []
+	for row in reader:
+		if len(row) > 0:
+			ignore_list.append(row)
+	
+	id_file = open(id_file, "rb")
+	reader = csv.reader(id_file)
 	
 	page_dict = {}
 	for row in reader:
 		if len(row) > 0:
 			id = row[0]
-			page_dict[id] = ""
-			
+			if not id in ignore_list
+				page_dict[id] = ""
+				
 	return page_dict
 	
 def generatePageUrls(page_dict):
@@ -86,10 +96,11 @@ if __name__ == "__main__":
 	print "*** airgas_images.py - " + site + pnum + " ***\n"
 	
 	id_file = ids_dir + "\\" + site + "_image_ids" + pnum + ".csv"
+	ignore_file = config_dir + "\\" + site + "images_ignore_ids" + ".csv"
 	cache_dir = site + "_image_cache" + pnum + "\\"
 	results_file = site + "_image_dict" + pnum + ".csv"
 
-	page_dict = makePageDict(id_file)
+	page_dict = makePageDict(id_file, ignore_file)
 	page_urls = generatePageUrls(page_dict)
 
 	login_url = ""
