@@ -1,6 +1,6 @@
 #!/bin/bash
 
-top_dir="C:\\_netsol"
+top_dir="C:\\ECOMMERCESPIDER\\_netsol"
 
 site="$1"
 
