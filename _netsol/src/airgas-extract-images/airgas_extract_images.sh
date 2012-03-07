@@ -29,7 +29,7 @@ for i in 0 1 2 3 4 5 6; do
 	
 	echo -e "\n*** extracting images from cache$i"
 	$MOZILLA_CACHE_VIEW -folder $folder /copycache "https://emarket.airgas.com" "image/jpeg" /CopyFilesFolder $images_folder /UseWebSiteDirStructure 1
-	done
+done
 
 echo -e "\n*** associating and renaming images with product-ids"
 for i in 0 1 2 3 4 5 6; do
