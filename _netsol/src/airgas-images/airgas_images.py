@@ -13,7 +13,7 @@ def makePageDict(id_file, ignore_file):
 		if len(row) > 0:
 			id = row[0]
 			ignore_list.append(id)
-			print "added " + id + " to the ignore_list"
+			# print "added " + id + " to the ignore_list"
 			
 	id_file = open(id_file, "rb")
 	reader = csv.reader(id_file)
@@ -86,7 +86,7 @@ def getImages(login_url, cache_dir, page_dict, page_urls):
 		except:
 	      		traceback.print_exc()
 	      		
-		page_id = url.split('/')[-1]
+		page_id = url.split("inquiry/")[-1]
 		page_dict[page_id] = image_url
 	
 	time.sleep(10)
