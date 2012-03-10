@@ -46,7 +46,7 @@ for i in 0 1 2 3 4 5 6; do
 			i=$images_folder/emarket.airgas.com/$url_p1/$url_p2/$url_p3
 			cp $i $images_moved_folder/$id.jpg
 		else
-			echo $id >> $images_moved_folder/_ids_without_image.txt
+			echo $id >> $images_moved_folder/_$site_ids_without_image.txt
 		fi
 	done
 
