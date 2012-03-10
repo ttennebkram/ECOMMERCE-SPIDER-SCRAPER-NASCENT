@@ -36,7 +36,7 @@ for i in 0 1 2 3 4 5 6; do
 	file=$data_folder\\$site"_image_dict"$i.csv
 
 	for j in `cat $file`; do
-		id=`echo $j | cut -f1 -d',' -`
+		id=`echo $j | cut -f1 -d',' - | tr '/' '_'`
 		url=`echo $j | cut -f2 -d',' -`
  		url_p1=`echo -e $url | cut -f4 -d'/' -`
 		url_p2=`echo -e $url | cut -f5 -d'/' -`
