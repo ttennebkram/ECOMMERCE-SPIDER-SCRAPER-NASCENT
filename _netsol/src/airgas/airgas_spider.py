@@ -404,7 +404,7 @@ if __name__ == "__main__":
         	os.makedirs(site + "_pages")
 
             processNum = int(processNum)
-            getCategories(processNum, login_url, categoryLists[processNum], skipSpideringForIds=True)
+            getCategories(processNum, login_url, categoryLists[processNum], skipSpideringForIds=False)
 
     else:
         print 'need a site and processNum'
