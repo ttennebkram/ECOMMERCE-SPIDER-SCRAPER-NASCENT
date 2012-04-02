@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<url><![CDATA[http://static.cdwg.com/Eprocurement/xCBL/RoundTripHandoff.aspx?USERNAME=Northrop&PASSWORD=0308f9ded3&HOOK_URL=http://www.smartoci.com]]></url>
+	<base-url><![CDATA[http://static.cdwg.com]]></base-url>
+	<base-config>resources/scraper.xml</base-config>
+	<reader-config>resources/ReaderConfiguration.xml</reader-config>
+	<temp><![CDATA[temp]]></temp>
+	
+	<file-path>cdwg</file-path>
+	<file-name>-cdwg-</file-name>	
+		
+	<default-downloader>com.netsol.scraper.downloader.IterativeDownloader</default-downloader>
+	<default-reader>com.netsol.scraper.reader.BaseReader</default-reader>
+	<default-transformer>com.netsol.scraper.transformer.BaseTransformer</default-transformer>
+
+	<regex-for-category><![CDATA[class=btslink6\s+href='(.*?)']]></regex-for-category>
+	<regex-for-subcategory><![CDATA[<div\s+class="bulletedHyperlink"\s+style="width:225px;float:left;">\s+<a href=(.*?)>]]></regex-for-subcategory>
+	<regex-for-sku-url><![CDATA[hprProductLink"\s+href="(.*?)">]]></regex-for-sku-url>
+	<regex-for-next-sku><![CDATA[href="(.*?)"[\s]*title="Next"]]></regex-for-next-sku>
+	
+</configuration>

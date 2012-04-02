@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clear-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Currency</property-name>
+      <target-key>euro</target-key>
+      <result-key><![CDATA[\�]]></result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Currency</property-name>
+      <target-key><![CDATA[[0-9\s,\.]*]]></target-key>
+      <result-key><![CDATA[]]></result-key>
+   </list-of-tag-information>
+      
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Currency</property-name>
+      <target-key><![CDATA[\$]]></target-key>
+      <result-key>USD</result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Currency</property-name>
+      <target-key><![CDATA[\�|\u20AC]]></target-key>
+      <result-key>EUR</result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Currency</property-name>
+      <target-key>euro</target-key>
+      <result-key>EUR</result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Unit</property-name>
+      <target-key>((PAK|DOOS|SET)([\s0-9]*)(EAS|VEL|FLESSEN|BLOKKEN|ROLLEN))</target-key>
+      <result-key>EA</result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Unit</property-name>
+      <target-key>STUK|ea|each|EAS|PAK|REAM</target-key>
+      <result-key>EA</result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Unit</property-name>
+      <target-key>CASE</target-key>
+      <result-key>CV</result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key>&lt;/(col|COL|colgroup|COLGROUP|h1|H1|h2|H2|h3|H3|a|A|span|SPAN|th|TH|td|TD|tr|TR|font|FONT|TBODY|tbody|table|TABLE|STRONG|strong|P|p|B|b|i|I|li|LI|ul|UL|DIV|div|u|U)&gt;</target-key>
+      <result-key><![CDATA[ ]]></result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key><![CDATA[&#45;]]></target-key>
+      <result-key>-</result-key>
+   </list-of-tag-information>
+
+<list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key>,</target-key>
+      <result-key> </result-key>
+   </list-of-tag-information>
+
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key><![CDATA[&#58;]]></target-key>
+      <result-key>:</result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key><![CDATA[&#47;]]></target-key>
+      <result-key>/</result-key>
+   </list-of-tag-information>  
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key>\?</target-key>
+      <result-key>''</result-key>
+   </list-of-tag-information>     
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>\?</target-key>
+      <result-key>''</result-key>
+   </list-of-tag-information>     
+
+<list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>&lt;(col|COL|colgroup|COLGROUP|h1|H1|h2|H2|h3|H3|a|A|span|SPAN|th|TH|td|TD|tr|TR|font|FONT|TBODY|tbody|table|TABLE|STRONG|strong|P|p|B|b|i|I|li|LI|ul|UL|BR|br|DIV|div|u|U)[^\>]*[\s/]*&gt;</target-key>
+      <result-key><![CDATA[ ]]></result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>&lt;/(col|COL|colgroup|COLGROUP|h1|H1|h2|H2|h3|H3|a|A|span|SPAN|th|TH|td|TD|tr|TR|font|FONT|TBODY|tbody|table|TABLE|STRONG|strong|P|p|B|b|i|I|li|LI|ul|UL|DIV|div|u|U)&gt;</target-key>
+      <result-key><![CDATA[ ]]></result-key>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      
+      <target-key><![CDATA[&nbsp;]]></target-key>
+      <result-key></result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>\t</target-key>
+      <result-key></result-key>
+   </list-of-tag-information>
+  
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Price</property-name>
+      <target-key><![CDATA[[^0-9^\,^\.]*]]></target-key>
+      <result-key><![CDATA[]]></result-key>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Price</property-name>
+      <target-key><![CDATA[,]]></target-key>
+      <result-key><![CDATA[]]></result-key>
+   </list-of-tag-information>
+
+<list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>&lt;/ul&gt;</target-key>
+      <result-key></result-key>
+   </list-of-tag-information>
+
+<list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>ItemLongText1</property-name>
+      <target-key>&lt;ul&gt;</target-key>
+      <result-key></result-key>
+   </list-of-tag-information>
+    <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key><![CDATA[\s[\s]]]></target-key>
+      <result-key> </result-key>
+   </list-of-tag-information>
+     <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+      <property-name>Description</property-name>
+      <target-key><![CDATA[\"]]></target-key>
+      <result-key> </result-key>
+   </list-of-tag-information>
+    <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+          <property-name>ItemLongText1</property-name>
+          <target-key>&lt;li&gt;</target-key>
+          <result-key></result-key>
+       </list-of-tag-information>
+    <list-of-tag-information xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+          <property-name>ItemLongText1</property-name>
+          <target-key>&lt;/li&gt;</target-key>
+          <result-key></result-key>
+       </list-of-tag-information>
+  
+
+
+  
+
+
+</clear-configuration>

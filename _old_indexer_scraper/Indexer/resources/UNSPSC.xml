@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unspsc-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog3</catalog-name>
+     <unspsc-code-key>44121904</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+  
+    <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog1</catalog-name>
+      <unspsc-code-key>23281902</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+    <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog2</catalog-name>
+      <unspsc-code-key>44121604</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+    <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog5</catalog-name>
+      <unspsc-code-key>55121605</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog20</catalog-name>
+      <unspsc-code-key>43211503</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog7</catalog-name>
+      <unspsc-code-key>50202306</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog11</catalog-name>
+      <unspsc-code-key>14111536</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog12</catalog-name>
+      <unspsc-code-key>14111500</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog14</catalog-name>
+      <unspsc-code-key>44122000</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog15</catalog-name>
+      <unspsc-code-key>31211704</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog16</catalog-name>
+      <unspsc-code-key>44121604</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+    <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog17</catalog-name>
+      <unspsc-code-key>44121604</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog18</catalog-name>
+      <unspsc-code-key>41111902</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog21</catalog-name>
+      <unspsc-code-key>51102723</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog23</catalog-name>
+      <unspsc-code-key>43201824</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog24</catalog-name>
+      <unspsc-code-key>32101601</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog27</catalog-name>
+      <unspsc-code-key>48101520</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog28</catalog-name>
+      <unspsc-code-key>43201824</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog31</catalog-name>
+      <unspsc-code-key>14111802</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog31</catalog-name>
+      <unspsc-code-key>14111802</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog32</catalog-name>
+      <unspsc-code-key>42182005</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog32</catalog-name>
+      <unspsc-code-key>42182005</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog33</catalog-name>
+      <unspsc-code-key>56101500</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog34</catalog-name>
+      <unspsc-code-key>56101502</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog35</catalog-name>
+      <unspsc-code-key>43232202</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog35</catalog-name>
+      <unspsc-code-key>43232202</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog36</catalog-name>
+      <unspsc-code-key>24102009</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog37</catalog-name>
+      <unspsc-code-key>48101905</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog38</catalog-name>
+      <unspsc-code-key>40101818</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog38</catalog-name>
+      <unspsc-code-key>40101818</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog39</catalog-name>
+      <unspsc-code-key>47131706</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog40</catalog-name>
+      <unspsc-code-key>53121603</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog40</catalog-name>
+      <unspsc-code-key>53121603</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog41</catalog-name>
+      <unspsc-code-key>24111500</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog42</catalog-name>
+      <unspsc-code-key>42161622</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog43</catalog-name>
+      <unspsc-code-key>60122503</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog44</catalog-name>
+      <unspsc-code-key>52171001</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog45</catalog-name>
+      <unspsc-code-key>24112400</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog46</catalog-name>
+      <unspsc-code-key>50202800</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog47</catalog-name>
+      <unspsc-code-key>24121502</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog48</catalog-name>
+      <unspsc-code-key>24121502</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   
+    <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog49</catalog-name>
+      <unspsc-code-key>44121704</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog50</catalog-name>
+      <unspsc-code-key>56101700</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog52</catalog-name>
+      <unspsc-code-key>44122101</unspsc-code-key>      
+   </list-of-unspsc-tag-information>
+   
+   <list-of-unspsc-tag-information xsi:type="java:com.netsol.scraper.reader.UNSPSCTagInformation">
+      <catalog-name>catalog53</catalog-name>
+      <unspsc-code-key>43211802</unspsc-code-key>      
+   </list-of-unspsc-tag-information> 
+      
+     
+            
+</unspsc-configuration>

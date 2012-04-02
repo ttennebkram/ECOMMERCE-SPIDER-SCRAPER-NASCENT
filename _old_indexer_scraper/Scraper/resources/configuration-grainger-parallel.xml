@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<url><![CDATA[https://b2bconnect.grainger.com:443/invoke/BVProcess.SAPOCI/processCatalogRequest?USERNAME=northgrum811357656tp&PASSWORD=pHav7349&HOOK_URL=http://www.smartoci.com]]></url>
+
+	<base-config>resources/scraper.xml</base-config>
+	<reader-config>resources/ReaderConfiguration.xml</reader-config>
+	<temp><![CDATA[/tmp/netsol]]></temp>
+	
+	<file-path>grainger</file-path>
+	<file-name>-grainger-</file-name>
+	
+<!--<default-downloader>com.netsol.scraper.downloader.BaseDownloader</default-downloader>-->
+<!--<default-downloader>com.netsol.scraper.downloader.BaseDownloaderNIE</default-downloader>-->
+	<default-downloader>com.netsol.scraper.downloader.IterativeDownloaderNIE</default-downloader>
+
+	<!-- not sure it even uses this for scraping -->
+	<default-reader>com.netsol.scraper.reader.BaseReader</default-reader>
+	<default-transformer>com.netsol.scraper.transformer.BaseTransformer</default-transformer>
+	
+	<!-- Level 1 -->
+	<regex-for-category><![CDATA[https://www.grainger.com/Grainger/[-a-zA-Z,]+/ecatalog/N-[a-zA-Z0-9]+]]></regex-for-category>
+	<!-- Level 2 -->
+	<regex-for-subcategory><![CDATA[https://www.grainger.com/Grainger/[-a-zA-Z,]+/[-a-zA-Z,]+/ecatalog/N-[a-zA-Z0-9]+]]></regex-for-subcategory>
+	<!-- Level 3 -->
+	<regex-for-sku-url-item><![CDATA[https://www.grainger.com/Grainger/[-a-zA-Z,]+/[-a-zA-Z,]+/[-a-zA-Z,]+/ecatalog/N-[a-zA-Z0-9]+]]></regex-for-sku-url-item>
+
+	<!-- next page, old... -->
+	<regex-for-next-sku><![CDATA[https://niles4.ebiz.grainger.com/Grainger/[a-zA-Z,-]+/ecatalog/N-[a-z0-9]+/No-[0-9]+\?op=search&sst=subset]]></regex-for-next-sku>
+
+<!-- Examples
+	Category: Abrasives
+    	https://www.grainger.com/Grainger/abrasives/ecatalog/N-bi1
+	Sucat: Abrasive Accessories
+    	https://www.grainger.com/Grainger/abrasive-accessories/abrasives/ecatalog/N-h9v
+	Subsubcat: Abrasive Mandrels
+    	https://www.grainger.com/Grainger/abrasive-mandrels/abrasive-accessories/abrasives/ecatalog/N-hcg
+
+	Item: Threaded Mandrel
+		https://www.grainger.com/Grainger/MERIT-Threaded-Mandrel-3RB82' onclick="seoLinkHandler
+-->
+	<regex-for-sku-url><![CDATA[https://www.grainger.com/Grainger/[-a-zA-Z0-9]+-[A-Z0-9]+(?=' onclick)]]></regex-for-sku-url>
+	
+	
+	<list-of-initial-urls xsi:type="java:java.lang.String"><![CDATA[(((f|ht){1}tps://)[-a-zA-Z0-9@:;%_\+.~#?&//=]+)]]></list-of-initial-urls>
+	
+	<list-of-visited-urls xsi:type="java:java.lang.String"><![CDATA[]]></list-of-visited-urls>
+	
+</configuration>
+	

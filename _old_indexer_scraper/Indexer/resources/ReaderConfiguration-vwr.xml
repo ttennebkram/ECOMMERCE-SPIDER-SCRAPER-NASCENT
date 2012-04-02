@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reader-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+   
+      
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+      <property-name>ItemNo</property-name>
+      <reg-ex1><![CDATA[>((\d{5}|\d{6})\-\d{3})</td>]]></reg-ex1>
+      <reg-ex2><![CDATA[>([a-zA-Z]{2}\d{6})</td>]]></reg-ex2>
+      <reg-ex3><![CDATA[>([a-zA-Z]{3}\d{4}\-\d{3}((\d{1}|[a-zA-Z]{2}|[a-zA-Z]{1})))</td>]]></reg-ex3>      
+   </list-of-tag-information>
+    
+    <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+      <property-name>Description</property-name>		
+      <reg-ex1><![CDATA[<h1>(.*?)</h1>]]></reg-ex1>
+   </list-of-tag-information>
+
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+      <property-name>Image</property-name>
+      <reg-ex1><![CDATA[id="productthumb"\s+rel="caption-position: bottom"><img alt=".*?" src="(.*?)"/>]]></reg-ex1>
+   </list-of-tag-information>
+       
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+      <property-name>ItemLongText1</property-name>
+      <reg-ex1><![CDATA[<div\s+class="textBodyText">(.*?)</div>]]></reg-ex1>
+   </list-of-tag-information>
+   
+    <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+      <property-name>ItemPriceUnit</property-name>
+      <reg-ex1><![CDATA[<td\sclass=\"libody\"\salign=\"center\"\svalign=\"top\"><a\sclass=\"smallund\"\shref=\"[a-zA-Z\(\)\'\:\,/.]*">[A-Z/]*(.*?)</a></td>]]></reg-ex1>
+      <reg-ex2><![CDATA[-.*<]]></reg-ex2>
+   </list-of-tag-information>
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+	  <property-name>ItemMatGroup</property-name>
+      <reg-ex1><![CDATA[UNSPSC:\s+(.*?)</span>]]></reg-ex1>
+      <reg-ex2><![CDATA[>[a-zA-Z\\s]+.*]]></reg-ex2>
+   </list-of-tag-information>
+   
+   
+   
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+	  <property-name>Currency</property-name>
+      <reg-ex1><![CDATA[<dl\sclass=\"your_price\">\s*<dt\sclass=\"price_title\">\s*Your\sPrice\:\s*</dt>\s*<dd\sclass=\"price\">\s*(.*?)[0-9.,]*\s*<br\s/>]]></reg-ex1>
+      <reg-ex2><![CDATA[>[a-zA-Z\\s]+.*]]></reg-ex2>
+   </list-of-tag-information>
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+	  <property-name>Price</property-name>
+      <reg-ex1><![CDATA[>\$([0-9,.]*)</td>]]></reg-ex1>
+   </list-of-tag-information>
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+	  <property-name>Unit</property-name>
+      <reg-ex1><![CDATA[Sold as:\s+[0-9]*+.*?\s+</p>]]></reg-ex1>
+      <reg-ex2><![CDATA[>[a-zA-Z\\s]+.*]]></reg-ex2>
+   </list-of-tag-information>
+   <list-of-tag-information xsi:type="java:com.netsol.scraper.util.TagInformation">
+	  <property-name>Url</property-name>
+      <reg-ex1><![CDATA[<url>(.*?)</url>]]></reg-ex1>
+      <reg-ex2><![CDATA[>[a-zA-Z\\s]+.*]]></reg-ex2>
+   </list-of-tag-information>
+   
+   
+</reader-configuration>

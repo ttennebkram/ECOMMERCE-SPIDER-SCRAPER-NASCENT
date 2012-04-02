@@ -1,0 +1,718 @@
+package com.netsol.scraper.downloader;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.log4j.Logger;
+import org.webharvest.definition.ScraperConfiguration;
+import org.webharvest.runtime.Scraper;
+import org.webharvest.runtime.variables.Variable;
+
+import com.netsol.scraper.util.Configuration;
+
+public class BaseDownloader
+{
+    protected List<String> vistedPages = new LinkedList<String>();
+    protected List<String> vistedSkues = new LinkedList<String>();
+
+    // Overrode in IterativeDownloader
+    public void start(Configuration config, Logger logger)
+    {
+        try
+        {
+
+            ScraperConfiguration scraperConfig = new ScraperConfiguration(
+                    config.baseConfig);
+            Scraper scraper = new Scraper(scraperConfig, config.temp);
+            String pageSource = navigateToInitialUrls(scraper, config, logger);
+            if (pageSource != null)
+            {
+                List<String>
+                        categoryUrl = fetchCategoryUrls(pageSource, config,
+                        logger);
+
+                fetchProducts(scraper, categoryUrl, config, logger);
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.error("Error", ex);
+        }
+    }
+
+    protected String navigateToInitialUrls(Scraper scraper,
+                                           Configuration config, Logger logger)
+    {
+        String pageSource = null;
+        Variable var = null;
+        String url = null;
+        try
+        {
+
+            scraper.addVariableToContext("url", config.url);
+            scraper.execute();
+            var = getVariable(scraper, "pageContent", logger);
+            pageSource = var.toString();
+            //System.out.println(pageSource);
+            for (int i = 0; i < config.listOfInitialUrls.size(); i++)
+            {
+                if (config.isApplyRegixToIntUrl)
+                {
+                    url = extractValueUsingRegex(pageSource,
+                                                 config.listOfInitialUrls.get(i));
+                    System.out.println("navigateToInitialUrls1: " + url);
+                    if (config.baseUrl != null && !validateUrl(url))
+                    {
+                        url = config.baseUrl + url;
+                    }
+                }
+                else
+                {
+                    url = config.listOfInitialUrls.get(i);
+                    System.out.println("navigateToInitialUrls2: " + url);
+
+                    if (config.baseUrl != null && !validateUrl(url))
+                    {
+                        url = config.baseUrl + url;
+                    }
+
+                    config.isApplyRegixToIntUrl = true;
+                }
+                try
+                {
+                    scraper.addVariableToContext("url", url);
+                    if(!config.enableScripting)
+                        scraper.removeRunningFunction();
+                    scraper.execute();
+                    var = getVariable(scraper, "pageContent",
+                                      logger);
+                    pageSource = var.toString();
+                    //System.out.println(pageSource);                    
+                }
+                catch (Exception exp)
+                {
+                    logger.error("error", exp);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.error("error", ex);
+        }
+        return pageSource;
+    }
+
+    protected List<String> fetchCategoryUrls(String pageSource,
+                                             Configuration config,
+                                             Logger logger)
+    {
+        // List<String> productsUrl = new LinkedList<String>();
+        Set<String> productsUrl = new LinkedHashSet<String>();
+
+        if(!config.isApplyRegixToCatUrl)
+        {
+            productsUrl.add(config.regexForCategory);
+            // return productsUrl;
+            // Convert back to list
+            List<String> outList = new LinkedList<String>();
+            outList.addAll( productsUrl );
+            return outList;
+        }
+
+        try
+        {
+            Pattern regexForHref = Pattern.compile(config.regexForCategory);
+            System.out.println("regexForHref: " + regexForHref);
+            Matcher matchList = regexForHref.matcher(pageSource);
+            String tmpmatch = "";
+            while (matchList.find())
+            {
+                if (!config.regexForCategory.contains("(.*?)"))
+                {
+                    tmpmatch = matchList.group();
+                }
+                else
+                {
+                    tmpmatch = matchList.group(1);
+                }
+                System.out.println("tmpmatch: " + tmpmatch);
+                if (!tmpmatch.equals(""))
+                {
+
+                    if (productsUrl.contains(tmpmatch) == false)
+                    {
+                        productsUrl.add(tmpmatch.replaceAll(" ", "%20").trim());
+                        logger.info(tmpmatch);
+                        
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.error("error", ex);
+        }
+
+        // return productsUrl;
+        // Convert back to list
+        List<String> outList = new LinkedList<String>();
+        outList.addAll( productsUrl );
+        return outList;
+
+    }
+
+    protected String getNextPageUrl(String pageSource, Configuration config,
+                                    Logger logger)
+    {
+        String nextPageUrl = null;
+        try
+        {
+            Pattern regexForHref = Pattern.compile(config.regexForNextSku);
+            Matcher matchList = regexForHref.matcher(pageSource);
+            String tmpmatch = "";
+            while (matchList.find())
+            {
+                if (!config.regexForNextSku.contains("(.*?)"))
+                {
+                    tmpmatch = matchList.group();
+                }
+                else
+                {
+                    tmpmatch = matchList.group(1);
+                }
+
+                if (!tmpmatch.equals(""))
+                {
+
+                    if (!vistedPages.contains(tmpmatch))
+                    {
+                        vistedPages.add(tmpmatch.replaceAll(" ", "%20").trim());
+                        logger.info(tmpmatch);
+                        nextPageUrl = tmpmatch.replaceAll(" ", "%20").trim();
+                        break;
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.error("error", ex);
+        }
+        return nextPageUrl;
+    }
+
+    protected String extractValueUsingRegex(String pageSource, String regex) throws
+            Exception
+    {
+    	//System.out.println(pageSource);
+        String value = null;
+        Pattern pattern = Pattern.compile(regex);
+    	//System.out.println("regex: " + regex);
+
+        Matcher matchList = pattern.matcher(pageSource);
+        String tmpmatch = "";
+        if (matchList.find())
+        {
+            if (!regex.contains("(.*?)"))
+            {
+                tmpmatch = matchList.group();
+            }
+            else
+            {
+                tmpmatch = matchList.group(1);
+            }
+
+            if (!tmpmatch.equals(""))
+            {
+                value = tmpmatch.replaceAll(" ", "%20").trim();
+                System.out.println("value: " + value);
+            }
+        }
+        return value;
+    }
+
+    // TODO: Eventually change to Set or Collection but don't want to break other stuff
+    protected List<String> extractAllValueUsingRegex(String pageSource,
+            String regex, String appender) throws Exception
+    {
+        // List<String> list = new LinkedList<String>();
+    	// Converting to data structure that removes duplicates
+    	// LinkedHashSet preserves insertion order
+        Set<String> set = new LinkedHashSet<String>();
+        
+        Pattern regexForHref = Pattern.compile(regex);
+        System.out.println("regex: " + regex);
+        Matcher matchList = regexForHref.matcher(pageSource);
+        String tmpmatch = "";
+        while (matchList.find())
+        {
+        	// If no Group set then grab the entire match
+            if (!regex.contains("(.*?)"))
+            {
+                tmpmatch = matchList.group();
+            }
+            // Else get the first group match
+            else
+            {
+                tmpmatch = matchList.group(1);
+            }
+            System.out.println("tmpmatch0: " + tmpmatch);
+            if (!tmpmatch.equals(""))
+            {
+                if (appender != null && !validateUrl(tmpmatch))
+                {
+                    tmpmatch = appender + tmpmatch;
+                }
+                // list.add(tmpmatch);
+                set.add(tmpmatch);
+                System.out.println("tmpmatch: " + tmpmatch);
+            }
+        }
+        // return list;
+        // Convert back to list
+        List<String> outList = new LinkedList<String>();
+        outList.addAll( set );
+        return outList;
+    }
+
+    public static boolean validateUrl(String url)
+    {
+        Pattern pattern = Pattern.compile("((https?|ftp|gopher|telnet|file|notes|ms-help):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\.&]*)");
+        Matcher m = pattern.matcher(url);
+        return m.matches();
+    }
+
+    protected void fetchProducts(Scraper scraper, List<String> categoryUrls,
+            Configuration config, Logger logger)
+    {
+        String pageSource = null;
+        String skuPageSource = null;
+        Variable var = null;
+
+        if (categoryUrls.isEmpty())
+        {
+            categoryUrls.add(config.url);
+        }
+
+        // Foreach Category URL
+        for (int i = 0; i < categoryUrls.size(); i++)
+        {
+            try
+            {
+                int currentProduct = 1;
+                int currentPage = 1;
+                boolean run = true;
+                String url = categoryUrls.get(i);
+
+                // While run is True
+                do
+                {
+                    if(!vistedPages.contains(url))
+                        vistedPages.add(url);
+
+                    url = url.replaceAll("&amp;", "&");
+
+                    if (config.baseUrl != null && !validateUrl(url))
+                    {
+                        url = config.baseUrl + (!config.baseUrl.endsWith("/") && !url.startsWith("/") ? "/" : "") + url;
+                    }
+
+                    System.out.println("categoryUrl: " + url);
+                    scraper.addVariableToContext("url", url);
+                    if(!config.enableScripting)
+                        scraper.removeRunningFunction();
+                    scraper.execute();
+
+                    var = getVariable(scraper, "pageContent", logger);
+                    pageSource = var.toString();
+
+                    ArrayList<String>
+                            skuesPerPage = fetchSkuesFromPage(var.toString(),
+                            config, logger);
+                    System.out.println("skuesPerPage.size(): " + skuesPerPage.size());
+                    // Foreach SKUs Found on Page / skuesPerPage
+                    for (int j = 0; j < skuesPerPage.size(); j++)
+                    {
+                        skuPageSource = "";
+
+                        try
+                        {
+                        	System.out.println("sku: " + skuesPerPage.get(j));
+                            scraper.addVariableToContext(
+                                            "url",
+                                            skuesPerPage.get(j));
+                            if(!config.enableScripting)
+                                scraper.removeRunningFunction();
+                            scraper.execute();
+                            var = getVariable(scraper,
+                                              "pageContent",
+                                              logger);
+                            skuPageSource = var.
+                                            toString();
+                        }
+                        catch (Exception exp)
+                        {
+                            exp.printStackTrace();
+                            j--;
+
+                            vistedSkues.remove(
+                                            skuesPerPage.
+                                            get(j + 1));
+
+                            scraper.stopExecution();
+                            scraper.dispose();
+                            scraper = null;
+                            scraper = initializeScraper(config);
+                            navigateToInitialUrls(scraper, config, logger);
+
+                            continue;
+                        }
+
+                        // Two possibilities
+                        // Do we have a regex for SKU URL Item ?
+                        if (config.regexForSkuUrlItem != null &&
+                            !config.regexForSkuUrlItem.trim().isEmpty())
+                        {
+                            ArrayList<String>
+                                    itemsPerPage = fetchItemsFromPage(var.
+                                    toString(), config, logger);
+
+                            // Foreach Items Found on Page / itemsPerPage
+                            for (int k = 0; k < itemsPerPage.size(); k++)
+                            {
+                                if (vistedSkues.contains(
+                                        itemsPerPage.get(k)))
+                                {
+                                    continue;
+                                }
+                                skuPageSource = "";
+                                try
+                                {
+                                    System.out.println("url: " + itemsPerPage.get(k));
+                                	
+                                    scraper.
+                                            addVariableToContext(
+                                            "url",
+                                            itemsPerPage.get(k));
+                                    if(!config.enableScripting)
+                                        scraper.removeRunningFunction();
+                                    scraper.execute();
+                                    var = getVariable(scraper,
+                                            "pageContent",
+                                            logger);
+                                    skuPageSource = var.
+                                            toString();
+
+                                    skuPageSource = "<url>" +
+                                            itemsPerPage.get(k) +
+                                            "</url>" +
+                                            skuPageSource;
+
+                                    //skuName = skuesPerPage.get(j).replaceFirst(config.baseUrl, "");
+                                    //skuName = skuName.replaceAll("/", "-");
+                                    writeToFile(skuPageSource,
+                                                config.filePath + "/catalog" + (i + 1),
+                                                "/" + (i + 1) + config.fileName + currentPage + "-" + currentProduct,
+                                                logger);
+
+                                    vistedSkues.add(
+                                            itemsPerPage.
+                                            get(k));
+                                    currentProduct++;
+                                }
+                                catch (Exception exp)
+                                {
+                                    logger.error("Error", exp);
+                                    k--;
+
+                                    vistedSkues.remove(
+                                            itemsPerPage.
+                                            get(k + 1));
+
+                                    scraper.stopExecution();
+                                    scraper.dispose();
+                                    scraper = null;
+                                    scraper = initializeScraper(config);
+                                    navigateToInitialUrls(scraper, config, logger);
+
+                                    continue;
+                                }
+
+                            } // End Foreach Items Found on Page / itemsPerPage
+
+
+                            if(itemsPerPage != null)
+                                itemsPerPage.clear();
+
+                            itemsPerPage = null;
+                        }
+                        // Else no regex for SKU URL Item ?
+                        else
+                        {
+                            if (vistedSkues.contains(
+                                    skuesPerPage.get(j)))
+                            {
+                                continue;
+                            }
+                            try
+                            {
+                            	System.out.println("sku2: " + skuesPerPage.get(j));
+                                skuPageSource = "<url>" +
+                                                skuesPerPage.get(j) +
+                                                "</url>" +
+                                                skuPageSource;
+
+                                //skuName = skuesPerPage.get(j).replaceFirst(config.baseUrl, "");
+                                //skuName = skuName.replaceAll("/", "-");
+                                writeToFile(skuPageSource,
+                                            config.filePath +
+                                            "/catalog" + (i + 1),
+                                            "/" + (i + 1) +
+                                            config.fileName +
+                                            currentPage + "-" +
+                                            currentProduct,
+                                            logger);
+
+                                vistedSkues.add(
+                                        skuesPerPage.
+                                        get(j));
+                                currentProduct++;
+                            }
+                            catch (Exception exp)
+                            {
+                                logger.error("Error", exp);
+                            }
+                        }
+                    } // End Foreach skuesPerPage / SKUs found on Page
+
+                    if(skuesPerPage != null)
+                        skuesPerPage.clear();
+
+                    skuesPerPage = null;
+
+                    url = getNextPageUrl(pageSource, config, logger);
+                    currentPage++;
+
+                    if (url == null)
+                    {
+                        run = false;
+                    }
+
+                // End While run is True
+                } while (run);
+            }
+            catch (Exception ex)
+            {
+                logger.error("Error", ex);
+            }
+
+        }  // End Foreach Category URL
+
+    }
+
+    protected int getTotalPages(String pageSource, Configuration config)
+    {
+        //return extractValueFromPageSource(pageSource , config.masterRegexForTotalPages , config.regexForTotalPages);
+        return -1;
+    }
+
+    protected int getTotalProducts(String pageSource, Configuration config)
+    {
+        //return extractValueFromPageSource(pageSource , config.masterRegexForTotalProducts , config.regexForTotalProducts);
+        return -1;
+    }
+
+    protected int extractValueFromPageSource(String src, String masterRegexStr,
+                                             String regexStr)
+    {
+        int value = -1;
+        Pattern masterRegex = Pattern.compile(masterRegexStr);
+        Pattern regex = Pattern.compile(regexStr);
+        Matcher matchList = masterRegex.matcher(src);
+        String tmpmatch = "";
+        String actualMatch = "";
+        if (matchList.find())
+        {
+            if (!regexStr.contains("(.*?)"))
+            {
+                tmpmatch = matchList.group();
+            }
+            else
+            {
+                tmpmatch = matchList.group(1);
+            }
+
+            if (!tmpmatch.equals(""))
+            {
+                matchList = regex.matcher(tmpmatch);
+                if (matchList.find())
+                {
+                    actualMatch = matchList.group();
+                    value = Integer.parseInt(actualMatch.replaceAll(" ", "%20").trim());
+                }
+            }
+        }
+        return value;
+    }
+
+    // TODO: convert data structure
+    protected ArrayList<String> fetchSkuesFromPage(String pageSource,
+            Configuration config, Logger logger)
+    {
+        ArrayList<String> skues = new ArrayList<String>();
+        Pattern regexForHref = Pattern.compile(config.regexForSkuUrl);
+        Matcher matchList = regexForHref.matcher(pageSource);
+        String tmpmatch = "";
+        while (matchList.find())
+        {
+            if (!config.regexForSkuUrl.contains("(.*?)"))
+            {
+                tmpmatch = matchList.group();
+            }
+            else
+            {
+                tmpmatch = matchList.group(1);
+            }
+
+            if (!tmpmatch.equals(""))
+            {
+                if (config.baseUrl != null && !validateUrl(tmpmatch))
+                {
+                    tmpmatch = config.baseUrl + tmpmatch;
+                }
+                if (skues.contains(tmpmatch) == false)
+                {
+                    skues.add(tmpmatch.replaceAll(" ", "%20").trim());
+                }
+            }
+        }
+        return skues;
+    }
+
+    // TODO: convert data structure
+    protected ArrayList<String> fetchItemsFromPage(String pageSource,
+            Configuration config, Logger logger)
+    {
+        ArrayList<String> skues = new ArrayList<String>();
+        Pattern regexForHref = Pattern.compile(config.regexForSkuUrlItem);
+        Matcher matchList = regexForHref.matcher(pageSource);
+        String tmpmatch = "";
+        while (matchList.find())
+        {
+            if (!config.regexForSkuUrlItem.contains("(.*?)"))
+            {
+                tmpmatch = matchList.group();
+            }
+            else
+            {
+                tmpmatch = matchList.group(1);
+            }
+
+            if (!tmpmatch.equals(""))
+            {
+                if (config.baseUrl != null && !validateUrl(tmpmatch))
+                {
+                    tmpmatch = config.baseUrl + tmpmatch;
+                }
+                if (skues.contains(tmpmatch) == false)
+                {
+                    skues.add(tmpmatch.replaceAll(" ", "%20").trim());
+                }
+            }
+        }
+        return skues;
+    }
+
+
+    protected void writeToFile(String pageSource, String directory,
+                               String fileName, Logger logger)
+    {
+        FileWriter writer = null;
+        try
+        {
+            File fileFolder = new File(directory);
+            if (!fileFolder.exists())
+            {
+                fileFolder.mkdirs();
+            }
+            String fullName = directory + fileName + ".htm";
+            logger.info( "WRITING FILE '" + fullName + "'" );
+            writer = new FileWriter( fullName, false );
+            byte[] bytes = pageSource.getBytes("UTF-8");
+            writer.write(new String(bytes));
+            writer.close();
+        }
+        catch (Exception ex)
+        {
+
+            logger.error("error", ex);
+        }
+
+    }
+
+    protected String getPageSourceAfterPerformingOperation(String configPath,
+            String tempPath, Logger logger)
+    {
+        try
+        {
+
+            ScraperConfiguration scraperConfig = new ScraperConfiguration(
+                    configPath);
+            Scraper scraper = new Scraper(scraperConfig, tempPath);
+            scraper.setDebug(false);
+            scraper.execute();
+            Variable var = getVariable(scraper, "nextOperation", logger);
+            if (var != null && var.toString().trim().equals("*") == false)
+            {
+                getPageSourceAfterPerformingOperation(var.toString(), tempPath,
+                        logger);
+            }
+            else
+            {
+                var = getVariable(scraper, "pageContent", logger);
+                return var.toString();
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.error("Error", ex);
+
+        }
+        return null;
+    }
+
+    protected Variable getVariable(Scraper scraper, String varName,
+                                   Logger logger)
+    {
+        try
+        {
+            return scraper.getContext().getVar(varName);
+        }
+        catch (Exception ex)
+        {
+            logger.error("error", ex);
+            return null;
+        }
+    }
+
+    public Scraper initializeScraper(Configuration config)
+    {
+        try
+        {
+            ScraperConfiguration scraperConfig = new ScraperConfiguration(
+                    config.baseConfig);
+            return new Scraper(scraperConfig, config.temp);
+        }
+        catch (Exception exp)
+        {}
+
+        return null;
+    }
+}

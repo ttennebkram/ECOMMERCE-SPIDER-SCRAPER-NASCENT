@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<url><![CDATA[https://obi2.vwrsp.com/login/oci/index.cgi?USERNAME=16435559&PASSWORD=ngcnn9247&HOOK_URL=http://www.smartoci.com]]></url>
+	<base-url><![CDATA[https://obi2.vwrsp.com]]></base-url>
+	<base-config>resources/scraper.xml</base-config>
+	<reader-config>resources/ReaderConfiguration.xml</reader-config>
+	<temp><![CDATA[temp]]></temp>
+	
+	<file-path>vwr</file-path>
+	<file-name>-vwr-</file-name>	
+		
+	<default-downloader>com.netsol.scraper.downloader.IterativeDownloader</default-downloader>
+	<default-reader>com.netsol.scraper.reader.BaseReader</default-reader>
+	<default-transformer>com.netsol.scraper.transformer.BaseTransformer</default-transformer>
+
+	<regex-for-category><![CDATA[<a\s+href="(.*?)">.*?</a><!-- \([0-9]+\) -->]]></regex-for-category>
+	<regex-for-subcategory><![CDATA[<a href="(.*?)">.*?</a><!-- \([0-9]+\) -->]]></regex-for-subcategory>
+	<regex-for-sku-url><![CDATA[<a href="(.*?)">.*?</a><!-- \([0-9]+\) -->]]></regex-for-sku-url>
+	<regex-for-sku-url-item><![CDATA[<a href="(.*?)">.*?</a><!-- \([0-9]+\) -->]]></regex-for-sku-url-item>	
+	<regex-for-next-sku><![CDATA[href="(.*?)"[\s]*title="Next"]]></regex-for-next-sku>
+
+	<list-of-initial-urls xsi:type="java:java.lang.String"><![CDATA[<li><a\s+href="(.*?)">Browse our online product catalog.</a>]]></list-of-initial-urls>	
+		
+</configuration>

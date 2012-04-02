@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<reader-config>resources\ReaderConfiguration.xml</reader-config>
+	<base-url><![CDATA[https://obi2.vwrsp.com]]></base-url>	
+	<file-path>scraperResults\vwr</file-path>
+	<catalog-id>8?</catalog-id>
+        <unit-id>4?</unit-id>
+	<vendor-id>12323?</vendor-id>
+	<user-id>2?</user-id>
+	<configuration-path>resources\configuration.xml</configuration-path>
+	<clear-config>resources/ClearConfiguration.xml</clear-config>
+	<unspsc-config>resources/UNSPSC.xml</unspsc-config>
+	<supplier-name>vwr</supplier-name>
+	<destination-folder>indexerResults\\vwr</destination-folder>
+</configuration>
+	

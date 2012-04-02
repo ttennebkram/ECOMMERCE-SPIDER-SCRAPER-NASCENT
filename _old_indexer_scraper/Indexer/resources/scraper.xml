@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config charset="UTF-8">  
+	
+	<var-def name="pageContent">
+		<http url="${url}"/>
+	</var-def>
+	<!--
+	<file action="write" path="c:/test/source.html">
+		<template>
+			<![CDATA[
+				<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+			]]>
+			${pageContent}
+		</template>
+	</file>	
+	-->
+</config>
