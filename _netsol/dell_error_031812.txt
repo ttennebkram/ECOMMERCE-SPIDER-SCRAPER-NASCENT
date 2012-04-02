@@ -1,0 +1,1133 @@
+<BODY bgcolor=#dddddd>
+<TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>USERNAME</B></TD>
+<TD>OC00000145378</TD>
+</TR>
+<TR>
+<TD valign=top><B>USERNAMEList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>OC00000145378</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>PASSWORD</B></TD>
+<TD>OciAsap2004</TD>
+</TR>
+<TR>
+<TD valign=top><B>PASSWORDList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>OciAsap2004</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>HOOK_URL</B></TD>
+<TD>http://www.smartoci.com</TD>
+</TR>
+<TR>
+<TD valign=top><B>HOOK_URLList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>http://www.smartoci.com</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>lastError</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>error</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>errorType</B></TD>
+<TD>com.wm.app.tn.err.EXMLException</TD>
+</TR>
+<TR>
+<TD valign=top><B>errorDump</B></TD>
+<TD>com.wm.app.tn.err.EXMLException: &lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;
+	at wm.tn.docimpl.recognize(docimpl.java:912)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>service</B></TD>
+<TD>wm.tn.doc.xml:routeXml</TD>
+</TR>
+<TR>
+<TD valign=top><B>user</B></TD>
+<TD>Default</TD>
+</TR>
+<TR>
+<TD valign=top><B>time</B></TD>
+<TD>2012/03/18 16:43:57.520</TD>
+</TR>
+<TR>
+<TD valign=top><B>callStack</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>service</B></TD>
+<TD>wm.tn.doc:recognize</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>service</B></TD>
+<TD>wm.tn.doc.xml:routeXml</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>pipeline</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>nsDecls</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>xsi</B></TD>
+<TD>http://www.w3.org/2001/XMLSchema-instance</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>USERNAMEList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>OC00000145378</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>PASSWORD</B></TD>
+<TD>OciAsap2004</TD>
+</TR>
+<TR>
+<TD valign=top><B>PASSWORDList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>OciAsap2004</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>HOOK_URLList</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD>http://www.smartoci.com</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>xmldata</B></TD>
+<TD>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;asapOCIPunchOut
+      xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;header&gt;
+    &lt;ReceiverID&gt;121482657&lt;/ReceiverID&gt;
+    &lt;SenderID&gt;OC00000145378&lt;/SenderID&gt;
+    &lt;DocumentID&gt;120318164357&lt;/DocumentID&gt;
+  &lt;/header&gt;
+  &lt;ExternalCustomerID&gt;OC00000145378&lt;/ExternalCustomerID&gt;
+  &lt;ActionType&gt;create&lt;/ActionType&gt;
+  &lt;SalesOrder&gt;&lt;/SalesOrder&gt;
+  &lt;OrigSys&gt;O&lt;/OrigSys&gt;
+  &lt;BuyerCookie&gt;&lt;/BuyerCookie&gt;
+  &lt;EndUserID&gt;&lt;/EndUserID&gt;
+  &lt;BuyerURL&gt;http://www.smartoci.com&lt;/BuyerURL&gt;
+  &lt;Target&gt;&lt;/Target&gt;
+&lt;/asapOCIPunchOut&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>node</B></TD>
+<TD>_DOCUMENT_ System ID: null Public ID: null</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>localizedError</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>threadID</B></TD>
+<TD>HTTP Handler 76.247.184.76</TD>
+</TR>
+<TR>
+<TD valign=top><B>ssnid</B></TD>
+<TD>292U+8Pr+Lt6p1Lxp421onD2z3KP6c-555545</TD>
+</TR>
+<TR>
+<TD valign=top><B>nestedErrorInfo</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD valign=top><B>errorDetails</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD valign=top><B>errorMsgID</B></TD>
+<TD></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>event</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>subject</B></TD>
+<TD>Critical Error in AsapUtil.ErrorUtil:sendMail.</TD>
+</TR>
+<TR>
+<TD valign=top><B>Message</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>Type</B></TD>
+<TD>0</TD>
+</TR>
+<TR>
+<TD valign=top><B>CallingService</B></TD>
+<TD>AsapOCI.PunchOut:asapOCIPunchOut</TD>
+</TR>
+<TR>
+<TD valign=top><B>InternalService</B></TD>
+<TD>AsapOCI.PunchOut:asapOCIPunchOut</TD>
+</TR>
+<TR>
+<TD valign=top><B>Class</B></TD>
+<TD>GENERAL</TD>
+</TR>
+<TR>
+<TD valign=top><B>lastError</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>error</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;TRNSERV.000012.000089&lt;/ErrorCode&gt;
+   &lt;Info&gt;Could not get internal ID for partner (id=121482657, typeCode=null, typeDesc=DUNS).&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;java.lang.IllegalStateException&lt;/JavaClass&gt;
+      &lt;Message&gt;The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.&lt;/Message&gt;
+      &lt;StackTrace&gt;java.lang.IllegalStateException: The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.
+	at com.wm.app.tn.db.Datastore.getConnection(Datastore.java:268)
+	at com.wm.app.tn.db.Lookup.getIDTypes(Lookup.java:45)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDTypes(LookupStore.java:89)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDType(LookupStore.java:104)
+	at wm.tn.profileimpl.getInternalID(profileimpl.java:1955)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;0&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>errorType</B></TD>
+<TD>com.wm.app.tn.err.EXMLException</TD>
+</TR>
+<TR>
+<TD valign=top><B>errorDump</B></TD>
+<TD>com.wm.app.tn.err.EXMLException: &lt;EXMLException&gt;
+   &lt;ErrorCode&gt;TRNSERV.000012.000089&lt;/ErrorCode&gt;
+   &lt;Info&gt;Could not get internal ID for partner (id=121482657, typeCode=null, typeDesc=DUNS).&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;java.lang.IllegalStateException&lt;/JavaClass&gt;
+      &lt;Message&gt;The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.&lt;/Message&gt;
+      &lt;StackTrace&gt;java.lang.IllegalStateException: The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.
+	at com.wm.app.tn.db.Datastore.getConnection(Datastore.java:268)
+	at com.wm.app.tn.db.Lookup.getIDTypes(Lookup.java:45)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDTypes(LookupStore.java:89)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDType(LookupStore.java:104)
+	at wm.tn.profileimpl.getInternalID(profileimpl.java:1955)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;0&lt;/Level&gt;
+&lt;/EXMLException&gt;
+	at com.wm.app.tn.err.EXMLException.fromResource(EXMLException.java:43)
+	at wm.tn.profileimpl.getInternalID(profileimpl.java:1968)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>service</B></TD>
+<TD>wm.tn.profile:getInternalID</TD>
+</TR>
+<TR>
+<TD valign=top><B>user</B></TD>
+<TD>Default</TD>
+</TR>
+<TR>
+<TD valign=top><B>time</B></TD>
+<TD>2012/03/18 16:43:57.552</TD>
+</TR>
+<TR>
+<TD valign=top><B>callStack</B></TD>
+<TD>
+<TABLE>
+<TR>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>service</B></TD>
+<TD>wm.tn.profile:getInternalID</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>pipeline</B></TD>
+<TD><TABLE bgcolor=#dddddd border=1>
+<TR>
+<TD valign=top><B>id</B></TD>
+<TD>121482657</TD>
+</TR>
+<TR>
+<TD valign=top><B>idTypeDesc</B></TD>
+<TD>DUNS</TD>
+</TR>
+<TR>
+<TD valign=top><B>Message</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>Type</B></TD>
+<TD>0</TD>
+</TR>
+<TR>
+<TD valign=top><B>asapPartnerID</B></TD>
+<TD>121482657</TD>
+</TR>
+<TR>
+<TD valign=top><B>CallingService</B></TD>
+<TD>AsapOCI.PunchOut:asapOCIPunchOut</TD>
+</TR>
+<TR>
+<TD valign=top><B>InternalService</B></TD>
+<TD>AsapOCI.PunchOut:asapOCIPunchOut</TD>
+</TR>
+<TR>
+<TD valign=top><B>Class</B></TD>
+<TD>GENERAL</TD>
+</TR>
+<TR>
+<TD valign=top><B>detailedMessage</B></TD>
+<TD>Corporate Express - Message Handler 
+Server Name: laurel.asap.corp.intranet    Port: 443
+Error while processing: AsapOCI.PunchOut:asapOCIPunchOut
+The Error Message is - &lt;EXMLException&gt;
+   &lt;ErrorCode&gt;&lt;/ErrorCode&gt;
+   &lt;Info&gt;wm.tn.doc:recognize&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;com.wm.app.b2b.server.ServiceException&lt;/JavaClass&gt;
+      &lt;Message&gt;Doctype info not initialized.  BizDocType registry has not been created.&lt;/Message&gt;
+      &lt;StackTrace&gt;com.wm.app.b2b.server.ServiceException: Doctype info not initialized.  BizDocType registry has not been created.
+	at wm.tn.docimpl.recognize(docimpl.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;&lt;/Level&gt;
+&lt;/EXMLException&gt;
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>localizedError</B></TD>
+<TD>&lt;EXMLException&gt;
+   &lt;ErrorCode&gt;TRNSERV.000012.000089&lt;/ErrorCode&gt;
+   &lt;Info&gt;Could not get internal ID for partner (id=121482657, typeCode=null, typeDesc=DUNS).&lt;/Info&gt;
+   &lt;OriginalException&gt;
+      &lt;JavaClass&gt;java.lang.IllegalStateException&lt;/JavaClass&gt;
+      &lt;Message&gt;The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.&lt;/Message&gt;
+      &lt;StackTrace&gt;java.lang.IllegalStateException: The main connection to the datastore has not been initialized. Check the Trading Networks JDBC connection pool.
+	at com.wm.app.tn.db.Datastore.getConnection(Datastore.java:268)
+	at com.wm.app.tn.db.Lookup.getIDTypes(Lookup.java:45)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDTypes(LookupStore.java:89)
+	at com.wm.app.tn.profile.LookupStore.getExternalIDType(LookupStore.java:104)
+	at wm.tn.profileimpl.getInternalID(profileimpl.java:1955)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.wm.app.b2b.server.JavaService.baseInvoke(JavaService.java:322)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.BaseService.invoke(BaseService.java:168)
+	at com.wm.lang.flow.FlowInvoke.invoke(FlowInvoke.java:324)
+	at com.wm.lang.flow.FlowState.invokeNode(FlowState.java:581)
+	at com.wm.lang.flow.FlowState.step(FlowState.java:438)
+	at com.wm.lang.flow.FlowState.invoke(FlowState.java:403)
+	at com.wm.app.b2b.server.FlowSvcImpl.baseInvoke(FlowSvcImpl.java:982)
+	at com.wm.app.b2b.server.invoke.InvokeManager.process(InvokeManager.java:614)
+	at com.wm.app.b2b.server.invoke.StatisticsProcessor.process(StatisticsProcessor.java:44)
+	at com.wm.app.b2b.server.invoke.ServiceCompletionImpl.process(ServiceCompletionImpl.java:235)
+	at com.wm.app.b2b.server.invoke.ValidateProcessor.process(ValidateProcessor.java:49)
+	at com.wm.app.b2b.server.ACLManager.process(ACLManager.java:198)
+	at com.wm.app.b2b.server.invoke.DispatchProcessor.process(DispatchProcessor.java:39)
+	at com.wm.app.b2b.server.AuditLogManager.process(AuditLogManager.java:411)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:522)
+	at com.wm.app.b2b.server.invoke.InvokeManager.invoke(InvokeManager.java:369)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:246)
+	at com.wm.app.b2b.server.ServiceManager.invoke(ServiceManager.java:128)
+	at com.wm.app.b2b.server.HTTPInvokeHandler._process(HTTPInvokeHandler.java:131)
+	at com.wm.app.b2b.server.InvokeHandler.process(InvokeHandler.java:119)
+	at com.wm.app.b2b.server.Dispatch.run(Dispatch.java:312)
+	at wm.server.net.HandshakeHandler.run(IaikHTTPSListener.java:541)
+	at com.wm.util.pool.PooledThread.run(PooledThread.java:111)
+	at java.lang.Thread.run(Thread.java:534)
+&lt;/StackTrace&gt;
+   &lt;/OriginalException&gt;
+   &lt;Action&gt;&lt;/Action&gt;
+   &lt;Level&gt;0&lt;/Level&gt;
+&lt;/EXMLException&gt;</TD>
+</TR>
+<TR>
+<TD valign=top><B>threadID</B></TD>
+<TD>HTTP Handler 76.247.184.76</TD>
+</TR>
+<TR>
+<TD valign=top><B>ssnid</B></TD>
+<TD>292U+8Pr+Lt6p1Lxp421onD2z3KP6c-555545</TD>
+</TR>
+<TR>
+<TD valign=top><B>nestedErrorInfo</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD valign=top><B>errorDetails</B></TD>
+<TD></TD>
+</TR>
+<TR>
+<TD valign=top><B>errorMsgID</B></TD>
+<TD></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD valign=top><B>status</B></TD>
+<TD>Mail was sent successfully.</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+
