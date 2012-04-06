@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_netsol/src/airgas/airgas_spider.py</string>
+	<string>_netsol/src/dell/dell_spider.py</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,53 +21,53 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_netsol/src/airgas-extract-images/airgas_extract_images.sh</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>45</integer>
-				<key>line</key>
-				<integer>38</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>7</integer>
-		</dict>
-		<key>_netsol/src/airgas/airgas_readme.txt</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>_netsol/src/airgas/airgas_spider.py</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>118</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>231</integer>
+				<integer>12</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>331</integer>
+			<integer>0</integer>
+		</dict>
+		<key>_netsol/src/cdw/cdw_spider.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_netsol/src/dell/dell_spider.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>83</integer>
+				<key>line</key>
+				<integer>135</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>118</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_netsol/src/airgas-extract-images/airgas_extract_images.sh</string>
-		<string>_netsol/src/airgas/airgas_readme.txt</string>
+		<string>_netsol/src/cdw/cdw_spider.py</string>
+		<string>_netsol/src/dell/dell_spider.py</string>
 		<string>_netsol/src/airgas/airgas_spider.py</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
