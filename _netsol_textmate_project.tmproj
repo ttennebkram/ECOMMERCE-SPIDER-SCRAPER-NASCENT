@@ -61,7 +61,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>212</integer>
+			<integer>331</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -73,6 +73,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{152, -107}, {1290, 950}}</string>
+	<string>{{152, 78}, {1290, 950}}</string>
 </dict>
 </plist>

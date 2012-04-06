@@ -127,9 +127,20 @@ def getProductDetails(mapping, browser):
 
     print "found", len(idDict.keys()), "products"
     csvWriter = csv.writer(open('dell.csv', 'wb'))
-    csvWriter.writerow(["#ItemNumber", "NEW_ITEM-DESCRIPTION","NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE", \
-        "NEW_ITEM-CUSTFIELD4", "NEW_ITEM-MANUFACTMAT", "NEW_ITEM-MATGROUP", "NEW_ITEM-CUSTFIELD1", "NEW_ITEM-CUSTFIELD5"])
+	# old header
+    #csvWriter.writerow(["#ItemNumber", "NEW_ITEM-DESCRIPTION","NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE", \
+    #    "NEW_ITEM-CUSTFIELD4", "NEW_ITEM-MANUFACTMAT", "NEW_ITEM-MATGROUP", "NEW_ITEM-CUSTFIELD1", "NEW_ITEM-CUSTFIELD5"])
     
+	csvWriter.writerow(["#ItemNumber", "NEW_ITEM-VENDOR", "NEW_ITEM-DESCRIPTION", "NEW_ITEM-MATNR", "NEW_ITEM-MATGROUP", "NEW_ITEM-UNIT", "NEW_ITEM-PRICE", 
+		"NEW_ITEM-PRICEUNIT", "NEW_ITEM-CURRENCY", "ITEM-TIERED_PRICING", "NEW_ITEM-LEADTIME", "NEW_ITEM-EXT_SCHEMA_TYPE", "NEW_ITEM-EXT_CATEGORY_ID", 
+		"NEW_ITEM-EXT_CATEGORY", "NEW_ITEM-SLD_SYS_NAME", "NEW_ITEM-ATTACHMENT_PURPOSE", "NEW_ITEM-EXT_PRODUCT_ID", "NEW_ITEM-QUANTITY", "ITEM-URL",
+		"NEW_ITEM-VENDORMAT", "NEW_ITEM-MANUFACTCODE", "NEW_ITEM-MANUFACTMAT", "NEW_ITEM-LONGTEXT", "NEW_ITEM-IMAGE", "NEW_ITEM-SERVICE", "NEW_ITEM-CONTRACT", 
+		"NEW_ITEM-CONTRACT_ITEM", "NEW_ITEM-EXT_QUOTE_ID", "NEW_ITEM-EXT_QUOTE_ITEM", "ITEM-QUOTE_QUANTITY", "NEW_ITEM-ATTACHMENT", "NEW_ITEM-ATTACHMENT_TITLE",
+		"NEW_ITEM-CUST_FIELD1", "NEW_ITEM-CUST_FIELD2", "NEW_ITEM-CUST_FIELD3", "NEW_ITEM-CUST_FIELD4", "NEW_ITEM-CUST_FIELD5", "ITEM-GREEN_ITEM", "ITEM-BUNDLE_NO",
+		"ITEM-BUNDLE_QUANTITY", "ITEM-INSTOCK", "ITEM-QTY_ONHAND", "ITEM-MANUFACTURER_NAME", "ITEM-MIN_ORDER_QTY", "ITEM-MODELNO", "ITEM-UPC", "ITEM-CASE_UPC", 
+		"ITEM-CONFIG", "ITEM-BRAND_NAME", "ITEM-LIST_PRICE", "ITEM-COLOR", "ITEM-SIZE", "ITEM-GENDER", "ITEM-RAM", "ITEM-CPU", "ITEM-HDD", "ITEM-SCREEN_SZ",
+		"ITEM-SCREEN_REZ", "ITEM-ENERGY_STAR", "ITEM-COMMENTS", "DELETE"])
+
     i = 1
     for id in idDict.keys(): 
         try:
@@ -172,7 +183,12 @@ def getProductDetails(mapping, browser):
             else:       
                 image = "" 
 
-            row = [i, descr, "EA", price, currency, id, longtext, url, image, manufName, manufMat, matGroup, version, licenseQty]
+			# old row
+            # row = [i, descr, "EA", price, currency, id, longtext, url, image, manufName, manufMat, matGroup, version, licenseQty]
+
+			row = [i, "", descr, "", matGroup, "EA", price, "", currency, "", "", "", "", "", "", "", "", "", url, id, "", manufMat, longtext, image, "", "", "", "", "",
+	        "", "", "", version, licenseQty, "", "", "", "", "", "", "", "", manufName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+	
             print row
             if descr:
                 csvWriter.writerow(row)

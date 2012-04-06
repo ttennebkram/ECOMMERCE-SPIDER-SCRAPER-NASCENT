@@ -11,9 +11,10 @@ waitSeconds = 30
 baseURL = "http://emarket.airgas.com"
 
 # old header
-
 # header = ["#ItemNumber", "NEW_ITEM-DESCRIPTION", "NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-MANUFACTMAT", 
 #    "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE", "ITEM-MIN_ORDER_QTY", "ITEM-BREADCRUMB", "NEW_ITEM-MATGROUP"]
+
+"#ItemNumber", "NEW_ITEM-DESCRIPTION","NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE"
 #
 # row = [i, descr, unit, price, "USD", id, id, longtext, url, image, minquant, breadcrumb, mapping.get(id, '')]
 
