@@ -9,5 +9,5 @@ fi
 dir="$1"
 file="`echo $dir | cut -f1 -d'_' -`_images_ignore_ids.csv"
 for i in `ls $dir`; do
-	echo $i | cut -f1 -d'.' - | tr '_' '/' >> $file
+	echo $i | rev | cut -f2- -d'.' - | rev | tr '_' '/' >> $file
 done

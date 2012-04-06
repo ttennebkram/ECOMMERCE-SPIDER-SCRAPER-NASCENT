@@ -10,8 +10,24 @@ ids_dir = "config\\"
 waitSeconds = 30
 baseURL = "http://emarket.airgas.com"
 
-header = ["#ItemNumber", "NEW_ITEM-DESCRIPTION", "NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-MANUFACTMAT", 
-    "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE", "ITEM-MIN_ORDER_QTY", "ITEM-BREADCRUMB", "NEW_ITEM-MATGROUP"]
+# old header
+
+# header = ["#ItemNumber", "NEW_ITEM-DESCRIPTION", "NEW_ITEM-UNIT", "NEW_ITEM-PRICE", "NEW_ITEM-CURRENCY", "NEW_ITEM-VENDORMAT", "NEW_ITEM-MANUFACTMAT", 
+#    "NEW_ITEM-LONGTEXT", "NEW_ITEM-URL", "NEW_ITEM-IMAGE", "ITEM-MIN_ORDER_QTY", "ITEM-BREADCRUMB", "NEW_ITEM-MATGROUP"]
+#
+# row = [i, descr, unit, price, "USD", id, id, longtext, url, image, minquant, breadcrumb, mapping.get(id, '')]
+row = [i, "", descr, "", mapping.get(id, ''), unit, price, "", "USD", "", "", "", "", "", "", "", "", url, id, "", id, longtext, image, "", "", "", "", "",
+	"", "", "", "", "", "", "", "", "", "", "", "", "", "", minquant, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+
+header = ["#ItemNumber", "NEW_ITEM-VENDOR", "NEW_ITEM-DESCRIPTION", "NEW_ITEM-MATNR", "NEW_ITEM-MATGROUP", "NEW_ITEM-UNIT", "NEW_ITEM-PRICE", 
+	"NEW_ITEM-PRICEUNIT", "NEW_ITEM-CURRENCY", "ITEM-TIERED_PRICING", "NEW_ITEM-LEADTIME", "NEW_ITEM-EXT_SCHEMA_TYPE", "NEW_ITEM-EXT_CATEGORY_ID", 
+	"NEW_ITEM-EXT_CATEGORY", "NEW_ITEM-SLD_SYS_NAME", "NEW_ITEM-ATTACHMENT_PURPOSE", "NEW_ITEM-EXT_PRODUCT_ID", "NEW_ITEM-QUANTITY", "ITEM-URL",
+	"NEW_ITEM-VENDORMAT", "NEW_ITEM-MANUFACTCODE", "NEW_ITEM-MANUFACTMAT", "NEW_ITEM-LONGTEXT", "NEW_ITEM-IMAGE", "NEW_ITEM-SERVICE", "NEW_ITEM-CONTRACT", 
+	"NEW_ITEM-CONTRACT_ITEM", "NEW_ITEM-EXT_QUOTE_ID", "NEW_ITEM-EXT_QUOTE_ITEM", "ITEM-QUOTE_QUANTITY", "NEW_ITEM-ATTACHMENT", "NEW_ITEM-ATTACHMENT_TITLE",
+	"NEW_ITEM-CUST_FIELD1", "NEW_ITEM-CUST_FIELD2", "NEW_ITEM-CUST_FIELD3", "NEW_ITEM-CUST_FIELD4", "NEW_ITEM-CUST_FIELD5", "ITEM-GREEN_ITEM", "ITEM-BUNDLE_NO",
+	"ITEM-BUNDLE_QUANTITY", "ITEM-INSTOCK", "ITEM-QTY_ONHAND", "ITEM-MANUFACTURER_NAME", "ITEM-MIN_ORDER_QTY", "ITEM-MODELNO", "ITEM-UPC", "ITEM-CASE_UPC", 
+	"ITEM-CONFIG", "ITEM-BRAND_NAME", "ITEM-LIST_PRICE", "ITEM-COLOR", "ITEM-SIZE", "ITEM-GENDER", "ITEM-RAM", "ITEM-CPU", "ITEM-HDD", "ITEM-SCREEN_SZ",
+	"ITEM-SCREEN_REZ", "ITEM-ENERGY_STAR", "ITEM-COMMENTS,DELETE"]
 
 categoryPattern = re.compile('<li class="categoryListSub"><a href="(.*?)">', re.IGNORECASE|re.MULTILINE|re.DOTALL)
 subcategoryPattern = re.compile('<SPAN class="categoryList">\s+<A href="(.*?)">', re.IGNORECASE|re.MULTILINE|re.DOTALL)
