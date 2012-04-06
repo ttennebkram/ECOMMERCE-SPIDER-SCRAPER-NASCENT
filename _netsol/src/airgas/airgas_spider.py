@@ -229,7 +229,7 @@ def getProductDetails(i, idDict, browser, dir = ""):
             for b in breadcrumbs[3:]:
                 breadcrumb += unescape(b)                   
 
-            row = [i, "", descr, "", mapping.get(id, ''), unit, price, "", "USD", "", "", "", "", "", "", "", "", url, id, "", id, longtext, image, "", "", "", "", "",
+            row = [i, "", descr, "", mapping.get(id, ''), unit, price, "", "USD", "", "", "", "", "", "", "", "", "", url, id, "", id, longtext, image, "", "", "", "", "",
 	        "", "", "", "", "", "", "", "", "", "", "", "", "", "", minquant, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
             #print row
             csvWriter.writerow(row)
