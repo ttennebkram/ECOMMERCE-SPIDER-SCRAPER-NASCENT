@@ -345,7 +345,8 @@ def getMissing(dir):
     for i in range(6):
         reader = csv.reader(open(dir + "\\" + site + str(i) + '.csv', 'rb'))
         for row in reader:
-            id = row[5] 
+			# NEW_ITEM-VENDORMAT is now in column 20 (zero-based, so row[19]);
+            id = row[19] 
             if not id in['', "NEW_ITEM-VENDORMAT"]:
                 spider_skus[id] = row
         
