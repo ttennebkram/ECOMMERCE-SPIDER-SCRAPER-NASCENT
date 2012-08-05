@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<url><![CDATA[https://www.newpig.com/webapp/wcs/stores/servlet/OCIPunchOutSetup?USERNAME=ngc001&PASSWORD=OCI1Network&HOOK_URL=http://www.smartoci.com]]></url>
+	<base-url><![CDATA[https://www.newpig.com]]></base-url>
+	<base-config>config/resources/scraper.xml</base-config>
+	<reader-config>/home/smartoci/crawler/resources/ReaderConfiguration.xml</reader-config>
+	<temp><![CDATA[temp]]></temp>
+	
+	<file-path>newpig</file-path>
+	<file-name>-newpig-</file-name>	
+		
+	<default-downloader>com.netsol.scraper.downloader.IterativeDownloader</default-downloader>
+	<default-reader>com.netsol.scraper.reader.BaseReader</default-reader>
+	<default-transformer>com.netsol.scraper.transformer.BaseTransformer</default-transformer>
+	
+	<regex-for-category><![CDATA[<a href="(.*?)">Site Map]]></regex-for-category>
+	<regex-for-subcategory><![CDATA[/pig/CapturePageView.*(categoryId=[0-9]+)]]></regex-for-subcategory>	
+	<regex-for-sku-url><![CDATA[/pig/ProductDisplay.*(productId=[0-9]+)&langId=-1]]></regex-for-sku-url>
+	<regex-for-next-sku><![CDATA[]]></regex-for-next-sku>
+	
+	<list-of-initial-urls xsi:type="java:java.lang.String"><![CDATA[(((f|ht){1}tps://)[-a-zA-Z0-9@:;%_\+.~#?&//=]+)]]></list-of-initial-urls>	
+	
+</configuration>
+	

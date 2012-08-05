@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clear-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<clear-taginfo xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+		<property-name>price</property-name>
+		<target-key>$</target-key>
+		<result-key>USD</result-key>
+	</clear-taginfo>
+	<clear-taginfo xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+		<property-name>priceUnit</property-name>
+		<target-key>ea</target-key>
+		<result-key>EA</result-key>
+	</clear-taginfo>
+	<clear-taginfo xsi:type="java:com.netsol.scraper.reader.ClearTagInformation">
+		<property-name>priceUnit</property-name>
+		<target-key>each</target-key>
+		<result-key>EA</result-key>
+	</clear-taginfo>
+		
+</clear-configuration>
